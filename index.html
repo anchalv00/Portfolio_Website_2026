@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="menu">
+        <ul class="side-nav">
+            <li><a href="#" onclick="hideSidenav()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+            <li onclick="toggleSidenav()" class="hide"><a href="#home">Home</a></li>
+            <!-- <li class="hide"><a href="#about">About</a></li> -->
+            <li onclick="toggleSidenav()" class="hide"><a href="#projects">Projects</a></li>
+            <li onclick="toggleSidenav()" class="hide"><a href="#contact">Contact</a></li>
+            <li onclick="showSidenav()" class="side-nav-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="container first" id="home">
+        <section>
+            <div class="col-left home-text-container">
+                <div class="home-text">
+                    <h1>Hi, I'm Anchal</h1><br>
+                    <p>I love solving problems.</h2><br>
+                    <p>And being creative.</h2><br>
+                    <p>So, naturally, coding became my answer.</h2><br>
+                    <p class="home-proj-text">Check out some of my projects :D</p>
+                </div>
+                <div class="home-btns">
+                    <a href="https://github.com/anchalv00" target="_blank" class="btn btn-github">Github</a>
+                    <a href="#" target="_blank" class="btn btn-resume">Resume</a>
+                </div>
+            </div>
+            <div class="col-right profile-img">
+                <img src="assets\Anchal_Profile_Img.jpg" alt="Anchal's Image">
+            </div>
+        </section>
+    </div>
+    <div class="container second" id="projects">
+        <section>
+            <div class="col-left dragonfly-img">
+                <h1>Dragonfly</h1>
+                <p>Created with an inspiration from pixel art that older games have, Dragonfly is a game where people can turn their brain off and enjoy training and growing their own dragon!
+</p>
+                <p class="skills-text">HTML, CSS, JS </p>
+                <img src="assets\dragonfly_app_img.png" alt="Dragonfly Image">
+                <div class="dragonfly-btns">
+                    <a href="https://github.com/anchalv00/Dragonfly_Desktop_App/tree/main" target="_blank" class="btn btn-dragonfly">Dragonfly Github</a>
+                </div>
+            </div>
+            <div class="col-right col-dragonfly-video">
+                <p>Watch the design and coding process!</p>
+                <video 
+                    controls 
+                    preload="metadata" 
+                    poster="assets\dragonfly-video-thumbnail.jpg" 
+                    class="dragonfly-video">
+                    <source src="assets\dragonfly-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </div>
+    <div class="container third">
+        <section>
+            <div class="col-left hypercube-img">
+                <h1>Hypercube Research</h1>
+                <p>A cutting-edge 3D graphics engine for creating immersive virtual experiences.</p>
+                <p class="skills-text">Python, OpenSCAD</p>
+                <img src="assets\hypercube-research-pic.jpg" alt="Hypercube Research Group Image">
+            </div>
+            <div class="col-right hypercube-poster">
+                <p>This is my research poster!</p>
+                <img src="assets\hypercube-poster.jpg" alt="Hypercube Research Poster">
+                <div class="hypercube-btns">
+                    <a href="https://github.com/kristenvonbecker/hypercube" target="_blank" class="btn btn-hypercube">Hypercube Github</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container fourth" id="about">
+        <section>
+            <div class="col-left cwh-text">
+                <h1>Coding 4 Cookies</h1>
+                <p>I am a passionate software developer with a strong interest in problem-solving and creativity. I enjoy working on projects that challenge me to think critically and push the boundaries of technology.</p>
+                <p>In my free time, I like to explore new programming languages, contribute to open-source projects, and stay updated with the latest trends in the tech industry.</p>
+                <p class="skills-text">HTML, CSS, JS </p>
+                <div class="cwh-imgs">
+                    <img src="assets\cwh-logo.jpg" alt="ACWH Logo" class="cwh-logo">
+                    <img src="assets\girl-scouts-logo.jpeg" alt="Girl Scouts Logo" class="gs-logo">
+                </div>
+            </div>
+            <div class="col-right cwh-video-container">
+                <!-- <img src="assets\about-me-img.jpg" alt="Code With Her Image"> -->
+                <video 
+                    controls 
+                    preload="metadata" 
+                    poster="assets\cwh-video-thumbnail.png" 
+                    class="cwh-video">
+                    <source src="assets\cwh-website-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="cwh-btns">
+                    <a href="https://github.com/anchalv00/Web-C4C" target="_blank" class="btn btn-cwh">C4C Github</a>
+                </div>
+            </div>
+        </section>
+        <footer id="contact">
+            <p>Contact me at anv046@ucsd.edu</p>
+        </footer>
+    </script>
+
+    <script>
+        function showSidenav() {
+            const sidenav = document.querySelector('.side-nav');
+            sidenav.style.display = 'flex';
+        }
+        function hideSidenav() {
+            const sidenav = document.querySelector('.side-nav');
+            sidenav.style.display = 'none';
+        }
+        function toggleSidenav() {
+            const sidenav = document.querySelector('.side-nav');
+            if (sidenav.style.display === 'flex') {
+                hideSidenav();
+            } else {
+                showSidenav();
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Shafarik&display=swap" rel="stylesheet">
+</body>
+</html>
