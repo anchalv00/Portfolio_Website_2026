@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 
 <body>
     <nav>
-        <div class="nav-inner">
+        <div class="main-nav">
             <a href="#home" class="logo">Anchal</a>
 
             <ul class="nav-links">
@@ -33,7 +33,6 @@
         </div>
     </nav>
 
-    <!-- Mobile navigation -->
     <div class="side-nav" id="sideNav">
         <button class="close-btn" onclick="hideSidenav()" aria-label="Close navigation menu">
             <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28" fill="currentColor">
@@ -48,21 +47,20 @@
     </div>
 
     <main>
-        <!-- HERO -->
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <p class="eyebrow">Computer Engineering @ UC San Diego</p>
+        <section class="home-container" id="home">
+            <div class="home-content">
+                <div class="home-text">
+                    <p class="home-heading">Computer Engineering @ UC San Diego</p>
 
                     <h1>Hi, I'm Anchal.</h1>
 
-                    <div class="intro-lines">
+                    <div class="home-intro">
                         <p>I love solving problems.</p>
                         <p>And being creative.</p>
                         <p>So, naturally, coding became my answer.</p>
                     </div>
 
-                    <p class="hero-description">
+                    <p class="home-description">
                         I enjoy building things, learning how they work,
                         and figuring things out along the way.
                     </p>
@@ -77,16 +75,15 @@
                     </div>
                 </div>
 
-                <div class="hero-image">
-                    <img src="assets/Anchal_Profile_Img.jpg" alt="Anchal">
+                <div class="home-image">
+                    <img src="assets/Anchal_Profile_Img.jpg" alt="Anchal Image">
                 </div>
             </div>
         </section>
 
-        <!-- ABOUT -->
-        <section class="about section" id="about">
-            <div class="section-heading">
-                <p class="eyebrow">A little about me</p>
+        <section class="about container" id="about">
+            <div class="container-heading">
+                <p class="about-heading">A little about me</p>
                 <h2>Learning by building.</h2>
             </div>
 
@@ -105,30 +102,28 @@
                     </p>
                 </div>
 
-                <div class="about-note">
+                <div class="about-goals">
                     <span>Currently</span>
                     <p>Exploring engineering projects, building my technical skills, and looking for opportunities to learn from other people.</p>
                 </div>
             </div>
         </section>
 
-        <!-- PROJECTS -->
-        <section class="projects section" id="projects">
-            <div class="section-heading">
-                <p class="eyebrow">Things I've worked on</p>
+=        <section class="projects container" id="projects">
+            <div class="container-heading">
+                <p class="projects-heading">Things I've worked on</p>
                 <h2>Projects & Research</h2>
             </div>
 
             <div class="project-list">
 
-                <!-- Dragonfly -->
                 <article class="project-card">
-                    <div class="project-media">
+                    <div class="project-img">
                         <img src="assets/dragonfly_app_img.png" alt="Dragonfly desktop game">
                     </div>
 
                     <div class="project-info">
-                        <p class="project-number">01 / HACKATHON</p>
+                        <p class="project-title">01 / HACKATHON</p>
                         <h3>Dragonfly</h3>
 
                         <p class="project-description">
@@ -169,14 +164,13 @@
                     </div>
                 </article>
 
-                <!-- Hypercube -->
                 <article class="project-card reverse">
-                    <div class="project-media">
+                    <div class="project-img">
                         <img src="assets/hypercube-research-pic.jpg" alt="Hypercube research visualization">
                     </div>
 
                     <div class="project-info">
-                        <p class="project-number">02 / RESEARCH</p>
+                        <p class="project-title">02 / RESEARCH</p>
                         <h3>Hypercube Research</h3>
 
                         <p class="project-description">
@@ -215,14 +209,13 @@
                     </div>
 
                     <div class="project-poster">
-                        <p class="media-label">Research poster</p>
+                        <p class="img-title">Research poster</p>
                         <img src="assets/hypercube-poster.jpg" alt="Hypercube research poster">
                     </div>
                 </article>
 
-                <!-- Coding 4 Cookies -->
                 <article class="project-card">
-                    <div class="project-media cwh-media">
+                    <div class="project-img cwh-img">
                         <div class="cwh-logos">
                             <img src="assets/cwh-logo.jpg" alt="Code With Her logo">
                             <img src="assets/girl-scouts-logo.jpeg" alt="Girl Scouts logo">
@@ -230,7 +223,7 @@
                     </div>
 
                     <div class="project-info">
-                        <p class="project-number">03 / INTERNSHIP</p>
+                        <p class="project-title">03 / INTERNSHIP</p>
                         <h3>Coding 4 Cookies</h3>
 
                         <p class="project-description">
@@ -270,7 +263,7 @@
                     </div>
 
                     <div class="project-video">
-                        <p class="media-label">Website walkthrough</p>
+                        <p class="img-title">Website walkthrough</p>
                         <video controls preload="metadata"
                                poster="assets/cwh-video-thumbnail.png">
                             <source src="assets/cwh-website-video.mp4" type="video/mp4">
@@ -282,25 +275,18 @@
             </div>
         </section>
 
-        <!-- CONTACT -->
-        <section class="contact section" id="contact">
-            <div class="contact-box">
-                <p class="eyebrow">Let's connect</p>
-                <h2>Want to build something?</h2>
-                <p>I'm always interested in learning from new people and working on interesting projects.</p>
-
-                <div class="contact-links">
-                    <a href="mailto:anv046@ucsd.edu" class="btn btn-dark">Email Me</a>
-                    <a href="https://github.com/anchalv00" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
-                </div>
+        <section class="contact container" id="contact">
+            <div class="contact-links">
+                <a href="mailto:anv046@ucsd.edu" class="btn btn-dark">Email Me</a>
+                <a href="https://github.com/anchalv00" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Designed & built by Anchal · 2026</p>
+        <p>Thank you for visiting!</p>
     </footer>
-
+    
     <script>
         function showSidenav() {
             document.getElementById("sideNav").classList.add("open");
@@ -311,4 +297,4 @@
         }
     </script>
 </body>
-</html>
+</html> -->
