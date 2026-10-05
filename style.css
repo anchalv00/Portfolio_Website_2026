@@ -423,6 +423,7 @@ h3 {
 
 .project-video video {
     width: min(100%, 750px);
+    max-height: 400px;
     margin: 0 auto;
     border: 2px solid var(--dark);
     border-radius: 1rem;
